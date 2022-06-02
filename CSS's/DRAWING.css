@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: black;
+	color: white;
+}
+
+.nav{
+	width: 1000px;
+	margin: 30px auto;
+	background: white;
+}
+
+.nav ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}

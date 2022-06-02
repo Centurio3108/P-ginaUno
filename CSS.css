@@ -1,0 +1,272 @@
+body{
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.header{
+	margin: auto;
+	font-family:Times new roman;
+
+}
+
+ul, ol{
+	list-style: none;
+}
+
+.nav{
+	list-style: none;
+	padding: 0px; 
+	background: #121212;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 0;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav li a{
+	text-decoration: none;
+	color: white;
+	padding: 6px;
+	display: block;
+	margin-right: 2rem;
+	margin-left: 1.5rem;
+}
+
+.nav ul > li{
+	float: center;
+}
+
+.nav ul li ul li{
+	background-color: #121212;
+	height: 100px;
+}
+
+.lista{
+	margin-top: 1 rem;
+	align-content: space-between;
+}
+
+.lista li{
+	padding-top: 4rem;
+}
+
+.nav li a: hover{
+	background-color: #4343;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul{
+	display: block;
+	text-align: left;
+}
+
+h3{
+	margin-bottom: .5em;
+	margin-left: 1.3em;
+	margin-right: 2em;
+	font-family: Didot;
+	font-size: 30px;
+}
+
+h2{
+	font-size: 15px;
+	font-family: Didot;
+}
+
+h1{
+	margin-bottom: .5em;
+	margin-left: 2.1em;
+	margin-right: 2em;
+	font-family: Didot;
+	font-size: 20px;
+}
+
+.container{
+	width: 85%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.Tabla1{ /* <-------------------------------- Tabla1 --------------------------------> */
+
+	padding-top: 6rem;
+}
+
+.Tabla1 tr{
+
+	color: white;
+}
+
+.Tabla1 tr td{
+
+	color: white;
+	font-style: Times new roman;
+}
+
+.Tabla1 tr td p{
+
+	margin-bottom: 1rem;
+	text-align: center;
+	margin-bottom: 2rem;
+
+	font-size: 13px;
+	font-family: Ditod;
+	font-style: italic;
+}
+
+.cont-temporizador{ /* <-------------------------------- Temporizador --------------------------------> */
+    
+    display: flex;
+    justify-content: center;   
+    margin-top: 60px; 
+}
+  
+.cont-temporizador .bloque{
+    
+    margin: 0px 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.cont-temporizador .bloque div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #121212, black);
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    width: 90px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+.cont-temporizador .bloque p{
+    
+    font-size: 10px;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+.cont-carta{ /* <------------------------------- Cartas --------------------------------> */
+    width: 300px;
+    height: 400px;
+    margin: 80px auto;
+    cursor: pointer;
+    perspective: 1200px;
+}
+
+.cont-carta .carta{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    /* <--- Permite establecer el efecto 3D a todo los elementos hijos de '.carta' ---> */
+}
+
+.cont-carta:hover .carta{
+    transform: rotateY(180deg);
+}
+
+.cont-carta .carta .cara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    /* <--- Permite ocultar la parte de atras de las Cartas ---> */ 
+
+}
+
+.cont-carta .carta .trasera{
+    transform: rotateY(180deg);
+    /* <--- Permite rotar la carta(cara-Trasera) 180 grados en el eje Y ---> */ 
+}
+
+.cont-carta .carta .cara img{
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+}
+
+.Tabla2{ /* <-------------------------------- Tabla2 --------------------------------> */
+
+	padding-top: 2rem;
+}
+
+.Tabla2 tr{
+
+	color: white;
+}
+
+.Tabla2 tr td{
+
+	color: white;
+	font-style: Times new roman;
+
+	text-align: center;
+	margin-bottom: 2rem;
+	padding-right: 4rem;
+	padding-left: 4rem;
+
+	font-size: 13px;
+	font-family: Ditod;
+	font-style: italic;
+}
+
+.visita{
+	color: white;
+	font-family: Didot;
+	margin: 3rem;
+}
+
+.g{
+	background-color: white;
+}
+
+.footer{
+	background-color: black; !important;
+	width: 100%; height: 190px;
+	padding-top: 4em;
+
+	height: 250px;
+	background-image: url("https://i.pinimg.com/originals/c6/1c/d2/c61cd23ff606ef7b7599ccf2c8dda159.gif");
+	background-size: cover;
+	background-size: 20rem;
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+.footerul li{
+	display: inline-block;
+	padding: 1em;
+}
+
+.tableul{
+	padding-top: 3em;
+	font-family: helvetica;
+}
+
+
+
+
+
+
+
